@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Form</title>
+  <link rel="stylesheet" href="style.css"></link>
+
+</head>
+
+<body>
+    <div class="form-container">
+
+  <form action="userProfileForm" method="post">
+    <h2>User Profile Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact No.:</label>
+    <input type="contact" id="contact" name="contact" required>
+
+    <label for="address">Address:</label>
+    <input type="address" id="address" name="address" required>
+
+
+    <!-- Add more fields as needed -->
+
+    <button type="submit" onclick="submitForm()">Submit</button>
+  </form>
+  <div id="successMessage" class="success-message"></div>
+
+
+
+  <!-- Social Sign-up Section -->
+  <div class="social-signup">
+    <h3>Sign up with Social Media</h3>
+    <!-- Add social media signup buttons/icons as needed -->
+    <button onclick="socialSignUp('Facebook')">Sign up with Facebook</button>
+    <button onclick="socialSignUp('Google')">Sign up with Google</button>
+  </div>
+  <script src = "app.js"></script>
+
+</body>
+
+</html>
+
+
+    
